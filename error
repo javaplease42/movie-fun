@@ -1,0 +1,110 @@
+Retrieving logs for app moviefun in org thomas-cramer / space review as thomas.j.cramer@accenture.com...
+
+   2018-11-07T12:58:04.37-0500 [API/1] OUT Updated app with guid 2c3a7a62-8438-403f-99ae-461524f2844f ({"buildpack"=>"java_buildpack_offline", "disk_quota"=>1024, "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>1024, "name"=>"moviefun", "space_guid"=>"279dd021-471d-47d5-b329-4d546d2c24da"})
+   2018-11-07T12:58:05.01-0500 [API/1] OUT Uploading bits for app with guid 2c3a7a62-8438-403f-99ae-461524f2844f
+   2018-11-07T12:58:11.45-0500 [API/1] OUT Updated app with guid 2c3a7a62-8438-403f-99ae-461524f2844f ({"state"=>"STOPPED"})
+   2018-11-07T12:58:11.73-0500 [API/1] OUT Creating build for app with guid 2c3a7a62-8438-403f-99ae-461524f2844f
+   2018-11-07T12:58:11.88-0500 [API/1] OUT Updated app with guid 2c3a7a62-8438-403f-99ae-461524f2844f ({"state"=>"STARTED"})
+   2018-11-07T12:58:34.06-0500 [API/1] OUT Creating droplet for app with guid 2c3a7a62-8438-403f-99ae-461524f2844f
+   2018-11-07T12:58:48.39-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:48.397  INFO 18 --- [ost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+   2018-11-07T12:58:48.39-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:48.399  INFO 18 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+   2018-11-07T12:58:48.40-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:48.401  INFO 18 --- [ost-startStop-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+   2018-11-07T12:58:48.46-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:48.466  INFO 18 --- [ost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+   2018-11-07T12:58:48.68-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:48.688  INFO 18 --- [ost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+   2018-11-07T12:58:49.35-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.351  INFO 18 --- [ost-startStop-1] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+   2018-11-07T12:58:49.38-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.382  INFO 18 --- [ost-startStop-1] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: album
+   2018-11-07T12:58:49.38-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.385  INFO 18 --- [ost-startStop-1] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: album
+   2018-11-07T12:58:49.62-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.628  INFO 18 --- [ost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+   2018-11-07T12:58:49.86-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.867  INFO 18 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'clientCertificateMapper' to: [/*]
+   2018-11-07T12:58:49.86-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.868  INFO 18 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+   2018-11-07T12:58:49.86-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.868  INFO 18 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+   2018-11-07T12:58:49.86-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.868  INFO 18 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+   2018-11-07T12:58:49.86-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.868  INFO 18 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+   2018-11-07T12:58:49.86-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.868  INFO 18 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'actionServlet' to [/moviefun/*]
+   2018-11-07T12:58:49.87-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:49.870  INFO 18 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+   2018-11-07T12:58:50.33-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.331  INFO 18 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c655221: startup date [Wed Nov 07 17:58:44 UTC 2018]; root of context hierarchy
+   2018-11-07T12:58:50.43-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.431  INFO 18 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String org.superbiz.moviefun.HomeController.index()
+   2018-11-07T12:58:50.43-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.432  INFO 18 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/setup],methods=[GET]}" onto public java.lang.String org.superbiz.moviefun.HomeController.setup(java.util.Map<java.lang.String, java.lang.Object>)
+   2018-11-07T12:58:50.43-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.433  INFO 18 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/albums],methods=[GET]}" onto public java.lang.String org.superbiz.moviefun.albums.AlbumsController.index(java.util.Map<java.lang.String, java.lang.Object>)
+   2018-11-07T12:58:50.43-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.435  INFO 18 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+   2018-11-07T12:58:50.43-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.436  INFO 18 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+   2018-11-07T12:58:50.46-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.468  INFO 18 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-07T12:58:50.46-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.468  INFO 18 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-07T12:58:50.51-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.512  INFO 18 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+   2018-11-07T12:58:50.99-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:50.994  INFO 18 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+   2018-11-07T12:58:51.06-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:51.068  INFO 18 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+   2018-11-07T12:58:51.07-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:58:51.075  INFO 18 --- [           main] org.superbiz.moviefun.Application        : Started Application in 7.235 seconds (JVM running for 8.283)
+   2018-11-07T12:58:52.92-0500 [CELL/0] OUT Container became healthy
+   2018-11-07T12:59:21.66-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:59:21.667  INFO 18 --- [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+   2018-11-07T12:59:21.66-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:59:21.667  INFO 18 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+   2018-11-07T12:59:21.70-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:59:21.701  INFO 18 --- [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 2018-11-07 17:59:21.830 ERROR 18 --- [nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: java.io.FileNotFoundException: movie-fixtures.csv (No such file or directory)] with root cause
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT java.io.FileNotFoundException: movie-fixtures.csv (No such file or directory)
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.io.FileInputStream.open(FileInputStream.java:195) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.util.Scanner.<init>(Scanner.java:611) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.superbiz.moviefun.CsvUtils.readFile(CsvUtils.java:17) ~[classes/:na]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.superbiz.moviefun.CsvUtils.readFromCsv(CsvUtils.java:34) ~[classes/:na]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.superbiz.moviefun.movies.MovieFixtures.load(MovieFixtures.java:31) ~[classes/:na]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.superbiz.moviefun.HomeController.setup(HomeController.java:36) ~[classes/:na]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:220) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:89) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.4.RELEASE.jar!/:4.3.4.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.cloudfoundry.router.ClientCertificateMapper.doFilter(ClientCertificateMapper.java:77) ~[client_certificate_mapper-1.5.0_RELEASE.jar!/:1.5.0.RELEASE]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:677) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:784) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:802) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1410) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_162]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.6.jar!/:8.5.6]
+   2018-11-07T12:59:21.83-0500 [APP/PROC/WEB/0] OUT 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_162]
+   2018-11-07T12:59:21.91-0500 [RTR/0] OUT moviefun-nice-chipmunk.apps.pikes.pal.pivotal.io - [2018-11-07T17:59:21.627+0000] "GET /setup HTTP/1.1" 500 0 375 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36" "130.211.0.57:56218" "10.0.4.52:61000" x_forwarded_for:"4.14.167.170, 165.225.0.80, 35.190.51.185, 130.211.0.57" x_forwarded_proto:"http" vcap_request_id:"21ee72b8-6594-4488-797b-64d2bd0538fc" response_time:0.289330683 app_id:"2c3a7a62-8438-403f-99ae-461524f2844f" app_index:"0" x_b3_traceid:"06a9827e7bcc11ef" x_b3_spanid:"06a9827e7bcc11ef" x_b3_parentspanid:"-"
+   2018-11-07T12:59:21.91-0500 [RTR/0] OUT 
