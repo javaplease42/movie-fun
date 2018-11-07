@@ -1,6 +1,10 @@
 package org.superbiz.moviefun;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.TransactionCallback;
+import org.springframework.transaction.support.TransactionOperations;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.superbiz.moviefun.albums.Album;
 import org.superbiz.moviefun.albums.AlbumFixtures;
@@ -18,12 +22,17 @@ public class HomeController {
     private final AlbumsBean albumsBean;
     private final MovieFixtures movieFixtures;
     private final AlbumFixtures albumFixtures;
+    private final TransactionOperations albumsTransactionOperations;
+    private final TransactionOperations movieTransactionOperations;
 
-    public HomeController(MoviesBean moviesBean, AlbumsBean albumsBean, MovieFixtures movieFixtures, AlbumFixtures albumFixtures) {
+    public HomeController(MoviesBean moviesBean, AlbumsBean albumsBean, MovieFixtures movieFixtures, AlbumFixtures albumFixtures,
+                          @Qualifier("albumsTransactionOperations") TransactionOperations albumsTransactionOperations,  @Qualifier("moviesTransactionOperations")  TransactionOperations moviesTransactionOperations) {
         this.moviesBean = moviesBean;
         this.albumsBean = albumsBean;
         this.movieFixtures = movieFixtures;
         this.albumFixtures = albumFixtures;
+        this.albumsTransactionOperations = albumsTransactionOperations;
+        this.movieTransactionOperations = moviesTransactionOperations;
     }
 
     @GetMapping("/")
@@ -34,11 +43,26 @@ public class HomeController {
     @GetMapping("/setup")
     public String setup(Map<String, Object> model) {
         for (Movie movie : movieFixtures.load()) {
-            moviesBean.addMovie(movie);
+
+            movieTransactionOperations.execute(new TransactionCallback<Object>() {
+                @Override
+                public Object doInTransaction(TransactionStatus status) {
+                    moviesBean.addMovie(movie);
+                    return null;
+                }
+            });
+
         }
 
         for (Album album : albumFixtures.load()) {
-            albumsBean.addAlbum(album);
+
+            albumsTransactionOperations.execute(new TransactionCallback() {
+                @Override
+                public Object doInTransaction(TransactionStatus status) {
+                    albumsBean.addAlbum(album);
+                    return null;
+                }
+            });
         }
 
         model.put("movies", moviesBean.getMovies());
