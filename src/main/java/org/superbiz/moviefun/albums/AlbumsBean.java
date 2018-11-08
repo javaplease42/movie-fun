@@ -16,6 +16,8 @@
  */
 package org.superbiz.moviefun.albums;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,6 +31,9 @@ public class AlbumsBean {
 
     @PersistenceContext
     private EntityManager entityManager;
+
+
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Transactional
     public void addAlbum(Album album) {
